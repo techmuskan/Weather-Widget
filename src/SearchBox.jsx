@@ -8,7 +8,7 @@ import WeatherDashboard from './WeatherDashboard';
 
 export default function SearchBox() {
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  const API_KEY = "e56343e09274f2fcc06baef733b999d0";
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   const [city, setCity] = React.useState("");
   const [weather, setWeather] = React.useState(null);
